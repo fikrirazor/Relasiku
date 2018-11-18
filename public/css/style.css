@@ -1,0 +1,104 @@
+	.input-field{
+        font:white;
+      }
+      .polkadot{
+        background-image: url("https://i.postimg.cc/BbNqGDSc/polkadot.png") !important;
+        background-repeat: repeat;
+        background-size: 1000px;
+      }
+      .no-shadows {
+        box-shadow: none!important;
+      }
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+		background-color: #0C599E;
+      }
+      main {
+        flex: 1 0 auto;
+      }
+      .nav-wrapper {
+        
+        background-repeat: repeat;
+        background-size: 1000px;
+          font-size: 14px;
+          font-weight: bold;
+		  margin-left:20px;
+		  margin-right:20px;
+        }
+		.dodgeblue{
+		background-color:#1285edff ;
+		color:white;
+		}
+      .warnabg {
+        background-color: #0C599E;
+        color:white;
+      }
+    .warnabg2{
+       background-color: #E5E5E5;
+        color:black;
+    }
+	.warnabg3{
+		background-color: #062E51;
+        color:black;
+	}
+      .page-footer{
+        background-color: #062E51 !important;
+      }
+	/* label focus color */
+ .input-field input:focus + label {
+   color: #ff5722 !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid #ff5722 !important;
+   box-shadow: 0 1px 0 0 #ff5722 !important
+ }
+ .opa {
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+ .btn{
+ border-radius:15px;
+ }
+ .biruabu{
+ background-color:#455665ff;
+ 
+ color:white;
+ }
+ .lingtulis{
+ background-color:#09447aff;
+ color:white;
+ }
+ .circle2 {
+    position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  padding: 50% 0;
+  border-radius: 50%;
+  
+  /* Just making it pretty */
+  @shadow: rgba(0, 0, 0, .1);
+  @shadow-length: 4px;
+  -webkit-box-shadow: 0 @shadow-length 0 0 @shadow;
+          box-shadow: 0 @shadow-length 0 0 @shadow;
+  text-shadow: 0 @shadow-length 0 @shadow;
+  background: #09447aff;
+  color: white;
+  font-family: Helvetica, Arial Black, sans;
+  font-size: 30px;
+  text-align: center;
+}
+ .putih{
+ background-color:white;
+ color:#979797ff;
+ }
+ .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
