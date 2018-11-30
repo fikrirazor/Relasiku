@@ -13,16 +13,14 @@
       <ul class="collapsible " data-collapsible="expandable" style="width:1280;">
     <li>
       <div class="collapsible-header" style="color:black;">Relasi</div>
-      <div class="collapsible-body"><p>
-	  <span style="font-family: calibri, sans-serif; font-size: 14pt;">Relation (Relasi) merupakan sebuah tabel dengan kolom-kolom dan baris-baris. Pada model relasional, relasi digunakan untuk menyimpan informasi mengenai objek-objek yang direpresentasikan dalam sebuah basis data. Relasi ini digambarkan dalam bentuk tabel dua dimensi. Contohnya mengenai informasi pegawai-pegawai yang bekerja di perusahaan X direpresentasikan pada relasi PEGAWAI yang mengandung informasi nomor induk pegawai, nama, alamat, gaji dan kode divisi tempat pegawai bekerja.</span></p>
+      <div class="collapsible-body"><p align="justify">
+	  <span class="amber-text text-darken-2" style="font-family: calibri, sans-serif">Relasi </span> <span style="font-family: calibri, sans-serif; font-size: 14pt;"> merupakan sebuah tabel dengan kolom-kolom dan baris-baris. Pada model relasional, relasi digunakan untuk menyimpan informasi mengenai objek-objek yang direpresentasikan dalam sebuah basis data. Relasi ini digambarkan dalam bentuk tabel dua dimensi. Contohnya mengenai informasi pegawai-pegawai yang bekerja di perusahaan X direpresentasikan pada relasi PEGAWAI yang mengandung informasi nomor induk pegawai, nama, alamat, gaji dan kode divisi tempat pegawai bekerja.</span></p>
     </li>
     <li>
       <div class="collapsible-header" style="color:black;">Attribut</div>
-      <div class="collapsible-body"><p><span style="font-family: calibri, sans-serif; font-size: 14pt;">Attribute (Atribut) merupakan kolom dari suatu relasi yang mempunyai nama. Atribut-atribut pada suatu relasi tidak harus tersusun secara khusus. Contohnya, pada relasi Member mempunyai lima kolom untuk atribut-atribut idMember, nmMember, username, password, email, telp, jalan, kota, provinsi, kodepos.</span></p>
-<p><span style="font-family: calibri, sans-serif; font-size: 14pt;">Primary key</span></p>
-<p><span style="font-family: calibri, sans-serif; font-size: 14pt;">Primary key adalah&nbsp;field kunci / utama dari suatu tabel yang menunjukkan bahwa field yang menjadi kunci tersebut tidak bisa diisi dengan data yang sama, / dengan kata lain Primary key menjadikan tiap record memiliki identitas sendiri-sendiri yang membedakan satu sama lainnya (unik).</span></p>
-<p><span style="font-family: calibri, sans-serif; font-size: 14pt;">Foreign key</span></p>
-<p><span style="font-family: calibri, sans-serif; font-size: 14pt;">Foreign key yaitu satu atribute (atau satu set atribute) yang melengkapi satu relationship (hubungan) yang menunjukkan ke induknya. Foreign key berguna untuk mendefinisikan kolom-kolom pada suatu tabel yang nilainya mengacu ke tabel lain,jadi kolom foreign key nilainya harus diambil dari nilai kolom pada tabel lain.</span></p></div>
+      <div class="collapsible-body"><p> <span class="amber-text text-darken-2" style="font-family: calibri, sans-serif">Atribut </span> <span style="font-family: calibri, sans-serif; font-size: 14pt;"> merupakan kolom dari suatu relasi yang mempunyai nama. Atribut-atribut pada suatu relasi tidak harus tersusun secara khusus. Contohnya, pada relasi Member mempunyai lima kolom untuk atribut-atribut idMember, nmMember, username, password, email, telp, jalan, kota, provinsi, kodepos.</span></p>
+<p align="justify"> <span class="amber-text text-darken-2" style="font-family: calibri, sans-serif">Primmary Key </span> <span style="font-family: calibri, sans-serif; font-size: 14pt;">adalah&nbsp;field kunci / utama dari suatu tabel yang menunjukkan bahwa field yang menjadi kunci tersebut tidak bisa diisi dengan data yang sama, / dengan kata lain Primary key menjadikan tiap record memiliki identitas sendiri-sendiri yang membedakan satu sama lainnya (unik).</span></p>
+<p align="justify"><span class="amber-text text-darken-2" style="font-family: calibri, sans-serif">Foreign Key </span><span style="font-family: calibri, sans-serif; font-size: 14pt;">yaitu satu atribute (atau satu set atribute) yang melengkapi satu relationship (hubungan) yang menunjukkan ke induknya. Foreign key berguna untuk mendefinisikan kolom-kolom pada suatu tabel yang nilainya mengacu ke tabel lain,jadi kolom foreign key nilainya harus diambil dari nilai kolom pada tabel lain.</span></p></div>
     </li>
 	<li>
       <div class="collapsible-header" style="color:black;">Pengaruh Atribut Komposit</div>
@@ -38,7 +36,8 @@
     </li>
 	<li>
       <div class="collapsible-header" style="color:black;">Pengaruh Atribut Multivalues</div>
-      <div class="collapsible-body"><p><span style="font-family: calibri, sans-serif; font-size: 14pt;">Atribut multivalues M dari entitas E direpresentasikan oleh table terpisah E dan M. Atribut Multivalues dilambangkan dengan 2 lingkaran pada atributnya. Contohnya attribute image memiliki lebih dari 1 value yaitu idproduk dan image seperti berikut:</span>
+      <div class="collapsible-body"><p><span class="amber-text text-darken-2" style="font-family: calibri, sans-serif">Atribut multivalues M dari entitas E direpresentasikan oleh table terpisah E dan M. Atribut Multivalues dilambangkan dengan 2 lingkaran pada atributnya. </span><br>
+	  <span style="font-family: calibri, sans-serif; font-size: 14pt;">Contohnya attribute image memiliki lebih dari 1 value yaitu idproduk dan image seperti berikut: </span>
 	  <br><img src="{{ URL::asset('img/multvalues.png') }}" alt="" class=" responsive-img center-align" style="max-width: 100%">
 	  </p></li>
   </ul>
@@ -47,4 +46,3 @@
   </div>
 </div>
 </div>
-@stop
