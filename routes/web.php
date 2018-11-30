@@ -40,7 +40,19 @@ Route::get('bab3', function()
 {
 	return View::make('pages.bab3');
 });
-
+Route::get('tentangkami', function()
+{
+	return View::make('pages.tentangkami');
+});
+Route::get('quiz', function()
+{
+	return View::make('pages.quiz');
+});
+Route::get('100', function()
+{
+	return View::make('pages.100');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
