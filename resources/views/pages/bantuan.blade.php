@@ -65,7 +65,7 @@ Temukan berbagai macam informasi yang dibutuhkan disini panduan menggunakan webs
 </span></div></div></div>	
 <br><br>
 			 </div>
-			<div class="polkadot">
+			<div class="polkadot" style="background-color: #062E51">
 			<div class="container">
 				<div class="row" style="font-size:18px;font-weight: bold;">
 				<div class="col s12 m4 l2 center-align">
