@@ -17,6 +17,7 @@
       }
       main {
         flex: 1 0 auto;
+		height:100%;
       }
       .nav-wrapper {
         
@@ -94,6 +95,10 @@
  .putih{
  background-color:white;
  color:#979797ff;
+ }
+ .putihtulisanhitam{
+	 background-color:white;
+ color:#000000;
  }
  .flex {
   display: flex;

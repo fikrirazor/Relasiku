@@ -7,32 +7,41 @@
 </div>
 </div>
 <div class="container">
-<p>Relation (Relasi) merupakan sebuah tabel dengan kolom-kolom dan baris-baris. Pada model relasional, relasi digunakan untuk menyimpan informasi mengenai objek-objek yang direpresentasikan dalam sebuah basis data. Relasi ini digambarkan dalam bentuk tabel dua dimensi. Contohnya mengenai informasi pegawai-pegawai yang bekerja di perusahaan X direpresentasikan pada relasi PEGAWAI yang mengandung informasi nomor induk pegawai, nama, alamat, gaji dan kode divisi tempat pegawai bekerja.
-</p>
+
     
  <ul class="collapsible " data-collapsible="expandable">
-    <li>
-      <div class="collapsible-header" style="color:black;">Attribute</div>
-      <div class="collapsible-body"><p><br> (Atribut) merupakan kolom dari suatu relasi yang mempunyai nama. Atribut-atribut pada suatu relasi tidak harus tersusun secara khusus. Contohnya, pada relasi Member mempunyai lima kolom untuk atribut-atribut idMember, nmMember, username, password, email, telp, jalan, kota, provinsi, kodepos.
-<br>Primary key
-<br>Primary key adalah field kunci / utama dari suatu tabel yang menunjukkan bahwa field yang menjadi kunci tersebut tidak bisa diisi dengan data yang sama, / dengan kata lain Primary key menjadikan tiap record memiliki identitas sendiri-sendiri yang membedakan satu sama lainnya (unik).
-<br>Foreign key
-<br>Foreign key yaitu satu atribute (atau satu set atribute) yang melengkapi satu relationship (hubungan) yang menunjukkan ke induknya. Foreign key berguna untuk mendefinisikan kolom-kolom pada suatu tabel yang nilainya mengacu ke tabel lain,jadi kolom foreign key nilainya harus diambil dari nilai kolom pada tabel lain.
-</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header" style="color:black;">Pengaruh Atribut Komposit</div>
-      <div class="collapsible-body"><img src="{{ URL::asset('img/komposit.png') }}" alt="" class=" responsive-img center-align" style="max-width: 40%"><p>Atribut komposit akan dipecah dengan membuat atribut terpisah untuk masing-masing komponennya.Contoh seperti pada attribute alamat akan dibagi menjadi beberapa komponen seperti jalan, kota, provinsi dan kode pos seperti berikut: 
-<br></p></div>
-    </li>
-	<li>
-      <div class="collapsible-header" style="color:black;">Pengaruh Atribut Multivalues</div>
-      <div class="collapsible-body"><img src="{{ URL::asset('img/komposit.png') }}" alt="" class=" responsive-img center-align" style="max-width: 40%"><p><br><img src="{{ URL::asset('img/multvalues.png') }}" alt="" class=" responsive-img center-align" style="max-width: 40%">
-<br>Atribut multivalues M dari entitas E direpresentasikan oleh table terpisah E dan M. Atribut Multivalues dilambangkan dengan 2 lingkaran pada atributnya. Contohnya attribute image memiliki lebih dari 1 value yaitu idproduk dan image seperti berikut:
-<br>
-<br>Dimana dibuat table GambarProduk dengan PK produk sebagai FK dan atribut image sebagai PK 
-<br></p></div>
-    </li>
+   
+<li> 
+<div class="collapsible-header" style="color:black;">Entitas kuat dan lemah
+</div> 
+<div class="collapsible-body">
+<p><span style="font-size: 14.0pt; line-height: 115%; font-family: 'calibri','serif';">entitas lemah adalah himpunan entitas yang keberadaannya bergantung keberadaan himpunan entitas lain. Direpresentasikan dengan 2 persegi panjang pada entitasnya. Contohnya entitas angsuran merupakan entitas yang bergantung pada entitas kredit untuk lebih jelas sebagai berikut:
+</span></p>
+<br><img src="{{ URL::asset('img/entitaslemah.png') }}" alt="" class=" responsive-img center-align" style="max-width: 100%">
+<p><span style="font-size: 12pt; line-height: 115%; font-family: calibri, sans-serif;"><span style="font-size: 14pt;">Dimana PK pada entitas kredit dijadikan FK pada entitas Angsuran</span> </span></p>
+</li>
+
+<li> 
+<div class="collapsible-header" style="color:black;">Entitas dengan kasus Agregasi
+</div> 
+<div class="collapsible-body">
+<p><span style="font-size: 14pt; line-height: 115%; font-family: calibri, sans-serif;">Pengertian dari Agregasi yaitu hubungan langsung dalam ERD antara himpunan entitas dengan himpunan relasi, mensyaratkan telah adanya relasi lain. terbentuknya relasi tidak juga dari entitas tapi bisa juga mengandung unsur relasi lainnya.</span></p>
+<br><img src="{{ URL::asset('img/agregrasi.png') }}" alt="" class=" responsive-img center-align" style="max-width: 100%">
+<p><span style="font-size: 14pt; line-height: 115%; font-family: calibri, sans-serif;">Dimana Agregasi entitas A dan B membentuk table R1 dengan PK_A dan PK_B sebagai FK 1 dan FK 2 dan berelasi dengan entitas C sehingga membentuk table R2 dengan PK_R1 dan PK_C sebagai FK1 dan FK2</span></p>
+
+</li>
+
+
+<li> 
+<div class="collapsible-header" style="color:black;">Entitas dengan kasus generalisasi spesialisasi
+</div> 
+<div class="collapsible-body">
+<p><span style="font-size: 14pt; line-height: 115%; font-family: calibri, sans-serif;">Bila pada sebuah himpunan entitas dilakukan pengelompokan dan akhirnya melahirkan himpunan entitas baru maka proses ini disebut Spesialisasi. Tapi jika kebalikan dari proses spesialisasi disebut dengan Generalisasi.</span></p>
+<p><span style="font-size: 14pt; line-height: 115%; font-family: 'Times New Roman', 'serif';"><span style="font-family: calibri, sans-serif;">Spesialisasi dan generalisasi sama-sama dilambangkan dengan komponen segitiga terbalik bertuliskan IS A. IS A juga melambangkan hubungan antara superclass-subclass. Entity yang dengan kedudukkan lebih rendah/tinggi memiliki lambang sama. Contohnya Pegawai tetap dan Pegawai honorer adalah Pegawai sehingga semua attribute pada pegawai ada di pegawai tetap dan honorer</span> </span></p>
+<br><img src="{{ URL::asset('img/general.png') }}" alt="" class=" responsive-img center-align" style="max-width: 100%">
+<p><span style="font-size: 14pt; line-height: 115%; font-family: calibri, sans-serif;">Dimana dapat dibuat table baru yaitu table pegawai atau pegawai tetap dan honorer ditambahkan semua atribut yang ada di entitas pegawai</span></p>
+
+</li>
   </ul>
 </div>
 </div>
